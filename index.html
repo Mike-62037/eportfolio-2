@@ -30,30 +30,38 @@
         </figure>
         <ul class="nav__link--list">
           <li class="nav__links">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            <a href="#"
+              class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black"
               >About</a
             >
           </li>
           <li class="nav__links">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            <a href="#"
+              class="
+              nav__link--anchor
+              link__hover-effect 
+              link__hover-effect--black"
               >Projects</a
             >
           </li>
-          <li class="nav__links">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          <li class="nav__links" onclick="toggleModal()">
+            <a href="#"
+              class="
+              nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black"
               >Contact</a
             >
           </li>
-          <li class="nav__links click">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          <li class="nav__links click"onclick="toggleContrast()">
+            <a href="#"
+              class="
+              nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black"
               ><i class="fa-solid fa-circle-half-stroke"></i
             ></a>
           </li>
@@ -62,12 +70,12 @@
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey</h1>
-          <h1 class="title blue">I'm Michael.</h1>
+          <h1 class="title"><b class="blue">I'm Michael.</b></h1>
           <p class="header__para">
             I'm a <b class="blue">Frontend Software Engineer</b> with a strong
             passion for building web applications with great user experiences.
             <br />
-            Here's a bit more <b class="blue">about me.</b>
+            Here's a bit more <b class="blue click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a href="#" class="social__link click">
@@ -86,7 +94,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__button click">
+      <button class="mail__button click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -121,6 +129,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
@@ -152,7 +161,6 @@
             Thanks for the message! Looking forward to speaking to you soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
     <section id="projects">

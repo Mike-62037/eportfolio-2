@@ -1,6 +1,16 @@
-// template_03vplco
-// service_tox7x8e
-// 3-CtVMUaci4IpOIp5
+let isModalOpen = false;
+let contrastToggle = false;
+
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+  document.body.classList += " dark-theme"
+}
+else {
+  document.body.classList.remove("dark-theme")
+  }
+}
 
 function contact(event) {
   event.preventDefault();
@@ -22,4 +32,13 @@ function contact(event) {
         "the email service is temporarily unavailable. Please contact me directly on Timeconsumer37@gmail.com"
       );
     })
+}
+
+function toggleModal() {
+  if (isModalOpen) {
+    isModalOpen = false;
+    return document.body.classList.remove("modal--open")
+  }
+  isModalOpen = true;
+  document.body.classList += " modal--open";
 }
